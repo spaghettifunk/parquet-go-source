@@ -5,9 +5,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/xitongsys/parquet-go-source/writerfile"
-	"github.com/xitongsys/parquet-go/writer"
+	"github.com/spaghettifunk/parquet-go-source/writerfile"
 	"github.com/xitongsys/parquet-go/parquet"
+	"github.com/xitongsys/parquet-go/writer"
 )
 
 type Student struct {
@@ -19,7 +19,7 @@ type Student struct {
 	Day    int32   `parquet:"name=day, type=DATE"`
 }
 
-func main() {
+func writeFileExample() {
 	var err error
 	buf := new(bytes.Buffer)
 	fw := writerfile.NewWriterFile(buf)

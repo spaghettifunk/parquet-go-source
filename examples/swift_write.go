@@ -9,7 +9,7 @@ import (
 	"github.com/xitongsys/parquet-go/reader"
 	"github.com/xitongsys/parquet-go/writer"
 
-	"github.com/xitongsys/parquet-go-source/swift"
+	swiftsource "github.com/spaghettifunk/parquet-go-source/swift"
 )
 
 type Student struct {
@@ -21,7 +21,7 @@ type Student struct {
 	Day    int32   `parquet:"name=day, type=DATE"`
 }
 
-func main() {
+func swiftExample() {
 	connection := swift.Connection{
 		UserName: "test_user",
 		ApiKey:   "passw0rd",

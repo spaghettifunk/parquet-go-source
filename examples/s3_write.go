@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/xitongsys/parquet-go-source/s3"
+	"github.com/spaghettifunk/parquet-go-source/s3"
 	"github.com/xitongsys/parquet-go/reader"
 	"github.com/xitongsys/parquet-go/writer"
 )

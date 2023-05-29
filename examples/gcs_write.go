@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/xitongsys/parquet-go-source/gcs"
+	"github.com/spaghettifunk/parquet-go-source/gcs"
 	"github.com/xitongsys/parquet-go/writer"
 )
 
